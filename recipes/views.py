@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 # HTTP REQUEST
 def home(request):
@@ -7,9 +6,3 @@ def home(request):
         'name': 'Tawan Carvalho'
     })
     # return HTTP response
-
-def contato(request):
-    return render(request, 'recipes/contato.html')
-
-def sobre(request):
-    return HttpResponse("SOBRE")
